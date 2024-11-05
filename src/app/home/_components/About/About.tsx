@@ -1,6 +1,6 @@
 import { Card } from "@/components";
 
-const AboutMe = () => {
+const About = () => {
   return (
     <section className="flex flex-col gap-8">
       <Card as="aside" h={636} w={371}></Card>
@@ -9,4 +9,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default About;
