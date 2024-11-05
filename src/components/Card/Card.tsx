@@ -1,13 +1,5 @@
-interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  as?:
-    | "div"
-    | "section"
-    | "article"
-    | "aside"
-    | "header"
-    | "footer"
-    | "main"
-    | "nav";
+interface CardProps {
+  as?: keyof JSX.IntrinsicElements;
   w: number;
   h: number;
   children?: React.ReactNode;
@@ -18,12 +10,11 @@ const Card: React.FC<CardProps> = ({
   w,
   h,
   children,
-  ...rest
 }) => {
   return (
     <Component
-      className={`h-[${h}px] w-[${w}px] rounded-2xl bg-dark-blue shadow-lg`}
-      {...rest}
+      className={"rounded-2xl bg-dark-blue shadow-lg"}
+      style={{ width: `${w}px`, height: `${h}px` }}
     >
       {children}
     </Component>
