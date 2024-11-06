@@ -4,7 +4,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
 
 * {
   font-family: "Roboto", sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #091529 #182947;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #182947;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #091529;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
