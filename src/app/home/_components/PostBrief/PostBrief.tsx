@@ -11,7 +11,7 @@ const PostBrief: React.FC<PostBriefProps> = ({ title, description, tags }) => {
     <Card
       w={981}
       h={280}
-      className="box-border flex min-h-[280px] min-w-[981px] cursor-pointer flex-col gap-6 px-6 py-8"
+      className="hover:bg-dark-blue-selected box-border flex min-h-[280px] min-w-[981px] cursor-pointer flex-col gap-6 px-6 py-8 transition-all"
     >
       <h1 className="font-poppins text-2xl font-medium text-gray-200">
         {title}

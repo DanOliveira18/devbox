@@ -13,6 +13,7 @@ module.exports = {
           100: "#801191",
         },
         "dark-blue": "#091529",
+        "dark-blue-selected": "#0B1A34",
         "light-blue": "#182947",
       },
       fontFamily: {

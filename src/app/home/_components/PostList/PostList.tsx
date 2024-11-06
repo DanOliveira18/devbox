@@ -8,19 +8,25 @@ const PostList = () => {
       title: "Javascript e o maldito Event-loop...",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo libero. In dapibus semper ipsum, at malesuada lacus tristique feugiat. Mauris eu dolor sem. Morbi ante mi, congue at varius vel, varius eu quam. Cras porttitor ornare mauris, sed malesuada diam convallis non. Etiam vel dolor ante. Pellentesque feugiat augue a molestie lacinia. Fusce rutrum est quis diam hendrerit, nec volutpat lectus pellentesque. Donec congue sem eleifend tortor convallis, id sollicitudin lectus venenatis.",
-      tags: ["Javascript", "Typescript"],
+      tags: ["Javascript", "Typescript", "NodeJS"],
     },
     {
-      title: "Javascript e o maldito Event-loop...",
+      title: "Tailwind, o bootstrap 2.0?",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo libero. In dapibus semper ipsum, at malesuada lacus tristique feugiat. Mauris eu dolor sem. Morbi ante mi, congue at varius vel, varius eu quam. Cras porttitor ornare mauris, sed malesuada diam convallis non. Etiam vel dolor ante. Pellentesque feugiat augue a molestie lacinia. Fusce rutrum est quis diam hendrerit, nec volutpat lectus pellentesque. Donec congue sem eleifend tortor convallis, id sollicitudin lectus venenatis.",
-      tags: ["Javascript", "Typescript"],
+      tags: ["CSS", "Tailwind", "Bootstrap"],
     },
     {
-      title: "Javascript e o maldito Event-loop...",
+      title: "Next.JS até que é maneiro",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo libero. In dapibus semper ipsum, at malesuada lacus tristique feugiat. Mauris eu dolor sem. Morbi ante mi, congue at varius vel, varius eu quam. Cras porttitor ornare mauris, sed malesuada diam convallis non. Etiam vel dolor ante. Pellentesque feugiat augue a molestie lacinia. Fusce rutrum est quis diam hendrerit, nec volutpat lectus pellentesque. Donec congue sem eleifend tortor convallis, id sollicitudin lectus venenatis.",
-      tags: ["Javascript", "Typescript"],
+      tags: ["React.JS", "Next.JS", "Typescript"],
+    },
+    {
+      title: "Vamos falar sobre CSS",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo libero. In dapibus semper ipsum, at malesuada lacus tristique feugiat. Mauris eu dolor sem. Morbi ante mi, congue at varius vel, varius eu quam. Cras porttitor ornare mauris, sed malesuada diam convallis non. Etiam vel dolor ante. Pellentesque feugiat augue a molestie lacinia. Fusce rutrum est quis diam hendrerit, nec volutpat lectus pellentesque. Donec congue sem eleifend tortor convallis, id sollicitudin lectus venenatis.",
+      tags: ["CSS", "SASS"],
     },
   ];
 
@@ -31,7 +37,7 @@ const PostList = () => {
           Devbox
         </h1>
       </Card>
-      <div className="no-scrollbar flex flex-col gap-5 overflow-auto">
+      <div className="no-scrollbar flex flex-col gap-5 overflow-auto rounded-xl">
         {dummyData.map(({ description, tags, title }, index) => (
           <PostBrief
             key={index}
